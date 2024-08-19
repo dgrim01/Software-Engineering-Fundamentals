@@ -1,0 +1,56 @@
+<!-- posts/templates/base.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}My Django App{% endblock%}</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add your CSS links or stylesheets here -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>{% block header %}My Django App{% endblock %}</h1>
+        <!-- Add navigate links or other header content here -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Sticky_Notes</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li><a href="{% url 'post_list' %}">Post List</a></li>
+                {% if user.is_authenticated %}
+                  {% block extra_nav %}
+                  {% endblock %}
+                {% endif %}
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                {% if user.is_authenticated %}
+                  {% block user_nav %}
+                  {% endblock %}
+                {% endif %}
+                <li><a href="{% url 'signup' %}"><span class="glyphicon glyphicon-user"></span> Signup</a></li>
+                <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <!-- Add footer content or links here -->
+    </footer>
+    
+</body>
+</html>

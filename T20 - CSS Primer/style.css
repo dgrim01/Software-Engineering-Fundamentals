@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+            margin-bottom: 20px;
+            color: black;
+            background-color: whitesmoke;
+            padding: 30px;
+}
+
+p {
+    color: black;
+    font-family: Arial, Helvetica;
+}
+
+header {
+    background-color: purple;
+}
+
+body {
+    text-align: center;
+    background-color: forestgreen;
+    
+}
+
+#contact, #skills, #education, #experience{
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+#info {
+    background-color: #f8f9fa;
+    padding: 30px;
+}
+
+#contactform {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#nav-content{
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    color: black;
+    font-family: Arial, Helvetica;
+    list-style-type: none;
+}
+
+#img{
+    border: 5px solid #000;
+}

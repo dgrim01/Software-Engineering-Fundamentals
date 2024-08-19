@@ -1,0 +1,43 @@
+Models:
+- Task Managment Component:
+	- Responsibilities:
+		- Managing the creating, deleting, assigning and updating of tasks.
+		- Providing functions such as being able to set remdinders, login and register.
+	- Concerns:
+		- Making sure that retrieval of tasks is reliable and accurate.
+		- Implementing efficient algorithms for task organisation and sorting.
+- File system Component:
+	- Responsibilities:
+		- Storing task data persistantly.
+		- Retrieve task data when the user uses the application to request it.
+	- Concerns:
+		- Ensuring data integrity and consistency through validation and error handling.
+		- Implementing backup and recovery mechanisms to prevent data loss.
+Views:
+- User Interface component:
+	- Responsibilities:
+		- Ensuring that the user is presented with an inutitive and visually appealing inteferace.
+		- Handles the user inputs and interactions with the application.
+	- Concerns:
+		- Ensuring the UI design is user-friendly and accessible.
+		- Validating user input to prevent errors and ensure data integrity.
+		- Providing users with prompts and feedback according to their interaction with the application,
+			e.g. sucessful task creation, error message or prompts of what a correct input might be.
+- File system Component:
+	- Responsibilities:
+		- Storing task data persistantly.
+		- Retrieve task data when the user uses the application to request it.
+	- Concerns:
+		- Ensuring data integrity and consistency through validation and error handling.
+		- Implementing backup and recovery mechanisms to prevent data loss.
+Controllers:
+
+	- Responsibilities:
+		- Integrating with external services or APIs (e.g. google calender or microsoft graph).
+		- Providing interoperability with other applications or platforms like Windows or Mac.
+	- Concerns:
+		- Ensuring compatibility and consistency between the task manager and integrated services.
+		- Handling errors and exceptions that may occur during integration.
+		- Managing API usage limits and authentication tokens for external services.
+
+

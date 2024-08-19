@@ -1,0 +1,42 @@
+Use Cases for largest_number Function:
+
+- Find the largest number in a list with only one element.
+  Description: When the input list contains only one element, the function should return that element as the largest number.
+
+- Find the largest number in a list with two elements.
+  Description: When the input list contains two elements, the function should correctly identify and return the largest number.
+
+- Find the largest number in a list with three elements.
+  Description: When the input list contains three elements, the function should correctly identify and return the largest number.
+
+- Find the largest number in a list with five elements.
+  Description: When the input list contains five elements, the function should correctly identify and return the largest number.
+
+- Handle cases with negative numbers.
+  Description: The function should handle lists containing negative numbers and correctly identify the largest negative number if present.
+
+- Handle cases with duplicate largest numbers.
+  Description: If the list contains duplicate largest numbers, the function should return any one of them as the largest number.
+
+- Handle an empty list.
+  Description: When the input list is empty, the function should return None.
+
+Use Cases for sum_recursion Function:
+
+- Complete the sum with recursion in a list with only one element and valid index
+  Description: When the input list contains only one element and a valid index, the function should return the only element in the list.
+
+- Complete the sum with recursion in a list with multiple elements and a valid index.
+  Description: When the input list contains only one element and a valid index, the function should return the sum of the numbers in the list upto the valid index.
+
+- Complete the sum with recursion in a list with multiple elements and a index of zero.
+  Description: When the input list contains only one element and a index of zero, the function should return the first element in the list.
+
+- Complete the sum with recursion and has an index out of range.
+  Description: When the list is inputted but has an index that is out of range, the function should the result and an index of zero.
+
+- Complete the sum with recursion with negative numbers.
+  Description: The function should handle lists containing negative numbers and correctly identify the largest negative number if present.
+
+- Handle an empty list.
+  Description: When the input list is empty, the function should return zero.

@@ -1,0 +1,26 @@
+<!-- posts/templates/posts/post_list_loggedin.html -->
+{% extends 'base.html' %}
+
+{% block title %}Bulletin Board - {{page_title}}{% endblock %}
+
+{% block extra_nav %}
+    <li><a href="{% url 'post_create' %}">Create Post</a></li>
+{% endblock %}
+
+{% block user_nav %}
+    <li class="navbar-brand" style="color:white">Logged in As {{ user.username }}</li>
+{% endblock %}
+
+{% block content %}
+    <h2>{{ page_title }}</h2>
+    <p class="badge badge-pill badge-info">You must be logged in to create, update or delete a post</p>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <a href="{% url 'post_detail' pk=post.pk %}" class="btn btn-primary btn-sm">
+                    {{ post.title }}</a>
+                    <p>{{ post.content }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
